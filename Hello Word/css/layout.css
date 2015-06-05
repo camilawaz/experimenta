@@ -1,0 +1,365 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Construção da Página // CSS */ 
+
+/* Retirando os estilos do navegador */
+
+* {
+    margin: 0;
+    padding:0; 
+}
+
+a, a:hover {
+    text-decoration:none;
+    text-transform:none;
+
+} 
+/* Estilo do Topo */ 
+#topo {
+    background:white;/*Cor do Fundo*/
+    padding: 10px 0 0 0; /*Posicionamento - margem interna*/
+    height:50px;
+    position:fixed;
+    width:100%;
+    z-index:10;
+}
+
+#topo h2 a {
+    font-family: 'Megrim', serif; /*Importa a fonte do GoogleFonts*/
+}
+
+#topo h2 a:hover {
+    color:blue;
+}
+
+
+#menu {
+    float:right;
+}
+
+#menu ul li /*Item do menu*/ {
+    float:left; /*Posicionamento - faz um item ficar do lado do outro*/
+    padding:10px 10px; /*Posicionamento - margem interna*/
+}
+
+#menu ul li a /*Link do menu*/ {
+    font-family: 'Roboto', sans-serif; /*Importa a fonte do GoogleFonts*/
+    color:black;
+    text-decoration:none;
+    font-weight:900;
+    letter-spacing:2px; /*espaçamento entre as letras*/
+    text-transform:uppercase; /* Valores possívei: uppercase (caixa alta), lowercase(caixa baixa), capitalize(primeira letra em caixa alta*/
+    font-weight:800; /*Espessura da letra. Valores possíveis variam de acordo com a fonte escolhida*/
+    padding:10px 10px; /*Posicionamento - margem interna*/
+}
+
+#menu ul li a:hover /*Link do menu com mouse em cima*/ {
+    color:white;
+    background:black; /*Cor do Fundo do Link*/
+}
+
+/* Estilo do Sobre Mim */
+
+#sobre-mim {    
+    background:url(../imagens/bg_sobre.jpg);
+ 
+}
+
+#sobre {
+    height:100%;
+    max-height:400px;
+}
+
+#itens-sobre {
+    margin:0 auto;
+    padding:80px 0 50px 0;
+
+}
+
+
+#itens-sobre h3 {
+    font-family: 'Megrim', serif; /*Importa a fonte do GoogleFonts*/
+    font-size:8em; /*Tamanho da fonte. Se usa em como unidade, pois funciona melhor no responsivo*/
+    text-transform:uppercase;
+    line-height:normal;
+    text-align:center;
+    color:white;
+    
+}
+
+#itens-sobre p {
+    font-family: 'Roboto', sans-serif; /*Importa a fonte do GoogleFonts*/
+    font-size:1.5em;
+    font-weight:300;
+    text-align:center;
+    color:white;
+}
+
+/* Estilo das Habilidades */
+
+#habilidades-bg {
+
+    margin:50px 0; /*margem*/
+}
+.itens-habilidades {
+    border-bottom:1px solid grey;
+    height:60px; /* Altura do Item */
+    margin:30px 0px 0 0;
+
+}
+
+#habilidades h4 {
+    font-family:'Megrim', serif;
+    font-size:22px;
+    text-transform:uppercase;   
+
+}
+
+.itens-habilidades ul li {
+    float:left; /*deixa um item ao lado do outro*/ 
+    padding: 3px 15px 0 15px; /*deixa os itens distantes um do outro*/
+    font-family:'Roboto', sans-serif;
+    font-size:18px;
+    text-transform:uppercase;
+    color:#060349;
+    
+}
+
+/* Estilo da Área Trabalhos*/
+
+#trabalhos-bg {
+
+    margin:50px 0; /*margem*/
+}
+
+#trabalhos h3 {
+    font-family:'Megrim', serif;
+    font-size:32px;
+    color:black;
+    text-transform:uppercase;   
+    text-align:center;
+    margin-bottom:30px;
+}
+
+
+
+    /*galeria de trabalhos */
+
+
+ul.trabalho {
+	list-style: none;
+	font-size: 0px;
+	margin-left: -2.5%; /* should match li left margin */
+}
+ul.trabalho li {
+	display: inline-block;
+	padding: 10px;
+	margin: 0 0 2.5% 2.5%;
+	font-size: 16px;
+	font-size: 1rem;
+	vertical-align: top;
+	box-sizing: border-box; /*ajusta os tamanhos por completo, fazendo não da erro; processa todos os valores e os torna um único*/
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+ul.trabalho li img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 10px;
+}
+ul.trabalho li h4 {
+    font-family:'Megrim', serif;
+	margin: 0 0 5px;
+    font-size:15px;
+    text-align:center;
+}
+ul.trabalho li p {
+	font-size: .6em;
+	line-height: 1.5em;
+	color: black;
+    text-align:center;
+    font-family:'Roboto', sans-serif;
+    font-style:italic;
+}
+
+/* Classe para 2 colunas de imagem */
+ul.trabalho.dois li {
+	width: 47.5%; /* esse valor + 2.5 = 50% */
+}
+/* Classe para 3 colunas de imagem */
+ul.trabalho.tres li {
+	width: 30.83%; /* esse valor + 2.5 = 33% */
+}
+/* Classe para 4 colunas de imagem */
+ul.trabalho.quatro li {
+	width: 22.5%; /* esse valor + 2.5 = 25% */
+}
+
+
+/* Estilo da Área Contato */
+
+#contato h3{
+    font-family:'Megrim', serif;
+    font-size:32px;
+    color:black;
+    text-transform:uppercase;   
+    text-align:center;
+    margin-bottom:30px;
+
+}
+
+#contato #plus-contato {
+    float:left; /*alinha a esquerda*/
+    text-align:left; /*alinha todo o texto a esquerda*/
+}
+#contato #plus-contato ul li{
+    float:left; 
+    margin-left:5px;
+}
+
+#contato h6 {
+    font-family:'Megrim', serif;
+    font-size:22px;
+    margin-bottom:20px;
+    color:black;
+    text-transform:uppercase;   
+
+}
+
+#contato p {
+    font-family:'Roboto', sans-serif;
+    color:black; 
+
+}
+
+#contato img {
+    border-radius:100%; /*deixa a foto redonda. altere o valor*/
+    margin-bottom:30px; /*margem*/
+
+
+}
+
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+        #menu ul li a {
+        font-size:.8em; /*Tamanho da fonte.*/
+        } 
+
+    }
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+        
+    }
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+        #logo {display:none;}
+        #menu ul li a {
+        font-size:1em; /*Tamanho da fonte.*/
+        } 
+        #itens-sobre h3 {
+        font-size:6.5em; /*Tamanho da fonte. Se usa em como unidade, pois funciona melhor no responsivo*/
+        }
+        
+        .itens-habilidades {
+            border:none;
+            height:auto;
+            
+        }
+     
+    
+        .itens-habilidades ul li {
+            margin:10px auto;
+        }
+        
+        #contato #texto {
+            text-align: center;
+        }
+
+    
+        #contato #plus-contato {
+            float:none; /*Retira o alinhamento*/
+            text-align:center; /*alinha todo o texto ao centro*/
+        }
+    
+        #contato #plus-contato ul {
+            padding-left:33%; /*alinha os itens das redes sociais ao centro; muda de acordo com o tamanho/quantidade*/
+        }
+    
+    
+        #contato #plus-contato img {
+            margin:10px auto;
+            display:block;
+            
+        }
+        
+    }
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+        #logo {margin:0 auto; text-align:center;}
+        
+        #menu {display:none;}
+        #sobre {
+            height:100%;
+            min-height:450px; /*deixa a altura do bg maior na versão mobile*/
+        }
+        #itens-sobre h3 {
+            font-size:5.5em; /*Tamanho da fonte. Se usa em como unidade, pois funciona melhor no responsivo*/
+        }
+    
+        .itens-habilidades {
+            border:none;
+            height:auto;
+        }
+   
+        .itens-habilidades ul li {
+            float:none; /*deixa um item abaixo do outro*/
+            text-align:center;
+            margin-top:20px;
+
+        }
+    
+        #contato #texto {
+            text-align: center;
+        }
+    
+        #contato #plus-contato {
+            float:none; /*Retira o alinhamento*/
+            text-align:center; /*alinha todo o texto ao centro*/
+        }
+        
+        #contato #plus-contato ul {
+            padding-left:26%; /*alinha os itens das redes sociais ao centro; muda de acordo com o tamanho/quantidade*/
+        }
+    
+        #contato #plus-contato img {
+            margin:10px auto;
+            display:block;
+            
+        }
+    
+        ul.trabalho {
+		margin-left: 0;
+        }
+        ul.trabalho li {
+            width: 100% !important; /* ajusta o tamanho dos trabalhos */
+            margin: 0 0 20px;
+        }
+    }
